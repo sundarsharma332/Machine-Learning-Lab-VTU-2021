@@ -1,4 +1,0 @@
-Accuracy =  0.8933333333333333
-Accuracy using GMM =  0.9666666666666667
-
-Text(0, 0.5, 'Petal Width')
