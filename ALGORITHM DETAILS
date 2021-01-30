@@ -1,0 +1,122 @@
+Finds Algorithms:
+
+
+step 1: load the dataset
+step 2: Initilize h to the most General Hypothesis in H
+step 3 : for each positive instance x:
+         if the attribute constraint a , in h:
+             if the constraint a is satisfied by x:
+               then do nothing
+             else:
+               replace a in h by the next most general constraint is
+               satisfied by x
+step 4: output the final Hypothesis h
+
+
+Finds Algorithm is the most basic concept learning algorithms.
+Finds Algorithm only consider the positove examples.
+It computes the Specefic Hypothesis by generalizing the data sets which fails to satisfy the attribute constraint in the datasets.
+
+
+
+candidate Elimination Algorithms : 
+
+step 1 : load the data sets
+step 2 : Initilize H to the most general Hypotheisis
+         Initilize S to the most Specefic Hypothesis
+step 3 : for all the training examples
+         if example is the positive example:
+            if attribute_value == Hypothesis_value:
+                do nothing
+            else:
+                replace attribute with '?' basically by generalizin it with                 the help of the finds algorithms
+         else:
+         make generalize hypotheisis more Specefic
+step 5 : Output the Final Genaral and Specefic Hypothesis         
+
+The candidate elimination algorithm incrementally builds the version space given a hypothesis space H and a set E of examples. The examples are added one by one; each example possibly shrinks the version space by removing the hypotheses that are inconsistent with the example. The candidate elimination algorithm does this by updating the general and specific boundary for each new example. 
+
+You can consider this as an extended form of Find-S algorithm.
+Consider both positive and negative examples.
+Actually, positive examples are used here as Find-S algorithm (Basically they are generalizing from the specification).
+While the negative example is specified from generalize form.
+              
+
+
+Back Propagation Algorithms:
+
+The back propagarion algorithm is the algorithm which is used to train the neural networks.
+It basically have 3 differnt layers called input , hidden layar and the output layer.
+only the input and output layar are available to the global network. the hidden layer is only available within the network.
+there is a lot of neural connection betweent the different nodes or the diff layers called interconnection.
+Neural Networks learn  to perform and inprove its performancy by larning and resolving.Then it adds the small increment of learning rate in the bias to check the performance of the algorithm as per the given datasets.
+
+
+
+step 1 : load the datsets
+step 2 : assigns all the inputs and outputs
+step 3 : initilize all the weights with small numbers which typically between the range of -1 and 1
+step 4 : repeat
+         for every pattern in the training set
+         present the pattern to the network
+         propagate the input forward through the network:
+         for each layeer in the network
+         for every node in the layer
+         1. calculate the weight sum of the inputs to the node
+         2 . add the thresold  to the sum
+         3 . calculate the activation to the node
+         end 
+      end 
+step 5 : propagate  the errors backward through to the node
+         for every node in the output layer
+         calculate the error signal
+         end
+      for all hidden layer
+      1.calculate the node's signal error
+      2. update each node's weight in the network
+step 6 : calculate the global error
+step 7 : calculate the error function
+end
+
+
+Naive Bayes  Classifier Algorithms : 
+
+step 1 : load the datasets
+step 2 : Convert the datasets into the frequecy table
+step 3 : create a likelyhood table by finding the probabilities like = 0.29 and probability of playing is 0.64
+step 4 : Now use the Naive Bayesian Equation to calculate the posteror probability for each class
+step 5 : output the highest probability of the prediction
+
+
+
+
+Naive Bayes Classifier is the supervised learnig algorithm.
+it is based on the bayes theorm.
+it is used to find the probability of th event while independent to each other.
+it classifes by classyfing the datasets  by finding the probability of all the events int he datasets with respective to the category.
+Which is generally called the feature Engineering.
+
+
+
+
+Kmeans Algorithm :
+
+step 1 : Frist load the datasets
+step 2: cluster the data into the K groups where the K is predefined
+step 3 : select the K points at random cluster centers
+step 4 : assign the objects to thier closest cluster center according to ecludian distance function
+step 5 : calculate the centroid or mean of all the object in each clusters
+step 6 : Repeat the step 3,4,5 untill all the same points are assigned to each cluster
+
+K-Nearest Algorithms :
+
+
+step1 : load the datasets
+step2 : initilize the vallue of k 
+step 3 : for getting predicted class interate form 1 to total number of training points
+         calculate the ecuclidian distance metric
+step 4  : sort the calculated distance in accending order based on the distance values
+step 5 : get top rows from the sorted array
+step 6 : get the most frequent class of the rows
+step 7 : return the predicted class
+         
